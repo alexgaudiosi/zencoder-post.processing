@@ -3,13 +3,13 @@ defaults: &defaults
   secret_access_key: <%= ENV['AWS_SECRET_ACCESS_KEY'] %>
 
 development:
-  bucket: zencodeit-development
+  bucket: zencoder.testing
   <<: *defaults
 
 test:
-  bucket: zencodeit-test
+  bucket: zencoder.testing
   <<: *defaults
 
 production:
-  bucket: zencodeit-production
+  bucket: zencoder.testing
   <<: *defaults

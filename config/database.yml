@@ -2,6 +2,7 @@ defaults: &defaults
   adapter: postgresql
   encoding: unicode
   pool: 5
+  host: localhost
 
 test: &test
   database: zencodeit_test

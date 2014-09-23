@@ -11,8 +11,7 @@
   = errors User.new, :hello
   %body
     #main
-      #ribbon
-        = link_to(image_tag(asset_path('ribbon/ribbon.png'), alt: "Fork me on GitHub"), 'http://github.com/ksylvest/zencodeit')
+     
       #header
         .wrapper
           #logo
@@ -32,8 +31,3 @@
           = yield
       #footer
         .wrapper
-          #link
-            = link_to 'About', about_path
-            = link_to 'Terms', terms_path
-          #copy
-            Copyright #{Time.now.year} All Rights Reserved

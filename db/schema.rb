@@ -20,8 +20,8 @@ ActiveRecord::Schema.define(version: 20101202094438) do
     t.integer  "video_id"
     t.integer  "zencoder_id"
     t.string   "state"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   add_index "jobs", ["video_id"], name: "index_jobs_on_video_id", using: :btree
@@ -31,8 +31,8 @@ ActiveRecord::Schema.define(version: 20101202094438) do
     t.integer  "video_id"
     t.integer  "zencoder_id"
     t.string   "state"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   add_index "outputs", ["video_id"], name: "index_outputs_on_video_id", using: :btree
@@ -41,8 +41,8 @@ ActiveRecord::Schema.define(version: 20101202094438) do
   create_table "users", force: true do |t|
     t.string   "provider"
     t.string   "uid"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   add_index "users", ["provider", "uid"], name: "index_users_on_provider_and_uid", using: :btree
@@ -58,8 +58,8 @@ ActiveRecord::Schema.define(version: 20101202094438) do
     t.string   "preview_identifier"
     t.string   "preview_extension"
     t.integer  "preview_size"
-    t.datetime "created_at",          null: false
-    t.datetime "updated_at",          null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   add_index "videos", ["user_id"], name: "index_videos_on_user_id", using: :btree

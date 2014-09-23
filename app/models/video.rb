@@ -25,6 +25,7 @@ class Video < ActiveRecord::Base
     webm: { extension: '.webm' },
     mp4:  { extension: '.mp4'  },
     ogg:  { extension: '.ogv'  },
+    mov:  { extension: '.mov'  },
   }
 
   has_attached :preview, path: "videos/previews/:style/:identifier:extension", processor: :image, styles: {
