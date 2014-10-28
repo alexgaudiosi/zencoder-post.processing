@@ -51,6 +51,8 @@ class Video < ActiveRecord::Base
       self.encoding.url(:ogg),
     ]
   end
+ 
+
 
   def refresh(job, output)
     job.refresh
